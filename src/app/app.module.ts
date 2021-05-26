@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [AppComponent, HelloComponent],
   providers: [CookieService],
   bootstrap: [AppComponent]
